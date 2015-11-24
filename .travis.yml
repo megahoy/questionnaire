@@ -3,4 +3,14 @@ php:
   - 5.4
   - 5.5
   - 5.6
-script: phpunit -c questionnaire/app/
+
+before_script:
+#  - cp app/config/parameters.yml.dist app/config/parameters.yml
+  - composer install
+
+script:
+  - phpunit -c app/
+
+#notifications:
+#  email:
+#    -  sergey.stribaylo@gmail.com
