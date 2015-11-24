@@ -24,5 +24,5 @@ sudo php app/console cache:clear --env=prod --no-debug
 
 Install assets:
 <pre><code>
-app/console assets:install --symlink
+app/console assets:install
 </pre></code>
