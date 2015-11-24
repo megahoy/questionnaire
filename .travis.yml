@@ -5,9 +5,7 @@ php:
     - 5.6
 
 before_script:
-    - wget http://getcomposer.org/composer.phar
-    - php composer.phar install
-    - phpunit
+    - composer self-update
     
 script:
     - phpunit -c questionnaire/app
