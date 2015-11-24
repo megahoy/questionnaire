@@ -2,13 +2,22 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Questionnaire!{% endblock %}</title>
         <link href="{{ asset('bundles/app/css/bootstrap.min.css') }}" rel="stylesheet" />
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <style>
+            body {
+                padding-top: 50px;
+            }
+            .starter-template {
+                padding: 40px 15px;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         {% block body %}{% endblock %}
-        <script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('bundles/app/js/jquery-1.11.3.min.js') }}"></script>
+        <script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
     </body>
 </html>
