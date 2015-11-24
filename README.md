@@ -1,28 +1,18 @@
 # Questionnaire
 Symfony2 application with using Twitter Bootstrap
 
-Installation Symfony2 installer on Linux Systems:
-<pre><code>
-$ sudo curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony
-$ sudo chmod a+x /usr/local/bin/symfony
-</code></pre>
+Installation Symfony2 installer on Linux Systems:<br />
+`$ sudo curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony` <br />
+`$ sudo chmod a+x /usr/local/bin/symfony`
 
-Running all tests:
-<pre><code>
-$ phpunit -c app/
-</code></pre>
+Running all tests: <br />
+`$ phpunit -c app/`
 
-Running one test:
-<pre><code>
-$ phpunit -c app --filter 'DefaultControllerTest::testIndex' src/AppBundle/Tests/Controller/DefaultControllerTest.php
-</pre></code>
+Running one test: <br />
+`$ phpunit -c app --filter 'DefaultControllerTest::testIndex' src/AppBundle/Tests/Controller/DefaultControllerTest.php`
 
-Cache cleanup:
-<pre><code>
-sudo php app/console cache:clear --env=prod --no-debug
-</pre></code>
+Cache cleanup: <br />
+`$ sudo php app/console cache:clear --env=prod --no-debug`
 
-Install assets:
-<pre><code>
-app/console assets:install
-</pre></code>
+Install assets: <br />
+`$ app/console assets:install`
