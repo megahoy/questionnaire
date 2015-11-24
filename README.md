@@ -6,3 +6,13 @@ Installation Symfony2 installer on Linux Systems:
 $ sudo curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony
 $ sudo chmod a+x /usr/local/bin/symfony
 </code></pre>
+
+Running all tests:
+<pre><code>
+$ phpunit -c app/
+</code></pre>
+
+Running one test:
+<pre><code>
+$ phpunit -c app --filter 'DefaultControllerTest::testIndex' src/AppBundle/Tests/Controller/DefaultControllerTest.php
+</pre></code>
