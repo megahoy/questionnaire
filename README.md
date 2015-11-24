@@ -1,2 +1,2 @@
-# questionnaire
-Symfony2 application
+# Questionnaire
+Symfony2 application with using Twitter Bootstrap
